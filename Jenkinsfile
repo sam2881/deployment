@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('https://gcr.io', 'gcr:AutomaticTrainingCICD') {
-                        app = docker.build('automatictrainingcicd/prediction-api')
+                        app = docker.build('mlops-353417/prediction-api')
                         app.push("latest")
                     }
                 }
