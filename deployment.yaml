@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: gcr.io/automatictrainingcicd/prediction-api:latest
+          image: gcr.io/mlops-353417/prediction-api:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
