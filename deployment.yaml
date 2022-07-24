@@ -29,7 +29,7 @@ metadata:
   labels:
     app: api
 spec:
-  clusterIP: 10.127.240.120
+
   ports:
   - port: 5000
     protocol: TCP
