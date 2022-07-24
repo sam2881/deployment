@@ -3,7 +3,7 @@ pipeline {
     environment {
         PROJECT_ID = 'mlops-353417'
         CLUSTER_NAME = 'training-cluster'
-        LOCATION = 'us-central1-a'
+        LOCATION = 'us-west1'
         CREDENTIALS_ID = 'AutomaticTrainingCICD'
     }
     stages {
