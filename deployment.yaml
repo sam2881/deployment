@@ -20,14 +20,7 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
-          env:
-            - name: gmail_password
-              valueFrom:
-                secretKeyRef:
-                  name: gmail-secrets
-                  key: gmail_password
-            - name: email_address
-              value: svirahonda@gmail.com
+
 ---
 apiVersion: v1
 kind: Service
