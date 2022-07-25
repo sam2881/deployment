@@ -25,7 +25,7 @@ pipeline {
         }
      stage('Deploy to K8s') {
             steps{
-               echo " Deploy on kubernets"
+              sh 'exit 0'
 
                 }
             }
