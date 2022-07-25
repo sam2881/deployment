@@ -12,8 +12,7 @@ ADD ./house-prices-api /house-prices-api/
 RUN pip install --upgrade pip
 RUN pip install -r /house-prices-api/requirements.txt
 
-RUN chmod +x /house-prices-api/run.sh
-RUN chown -R ml-api-user:ml-api-user ./
+
 
 USER ml-api-user
 
