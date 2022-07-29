@@ -8,11 +8,16 @@ from fastapi.encoders import jsonable_encoder
 from loguru import logger
 from regression_model import __version__ as model_version
 from regression_model.predict import make_prediction
-
+import pickle
 from app import __version__, schemas
 from app.config import settings
 
 api_router = APIRouter()
+
+# model_path = "final/model/7f75e29729e249b088d55bef81550402.pkl"
+#
+# model = pickle.load(open(model_path, 'rb'))
+
 
 
 @api_router.get("/health", response_model=schemas.Health, status_code=200)
