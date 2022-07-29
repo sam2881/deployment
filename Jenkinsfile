@@ -12,7 +12,7 @@ pipeline {
                 git url: 'https://github.com/sam2881/deployment.git', branch: 'master'
             }
         }
-        stage('Building and deploying image') {
+        stage('Building and Pushing to Registry') {
             steps {
                 script {
                     docker.withRegistry('https://gcr.io', 'gcr:AutomaticTrainingCICD') {
@@ -23,7 +23,14 @@ pipeline {
                 }
             }
         }
-     stage('Deploy to K8s') {
+     stage('Deploy to staging area') {
+            steps{
+              sh 'exit 0'
+
+                }
+            }
+
+             stage('Load Test') {
             steps{
               sh 'exit 0'
 

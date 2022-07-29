@@ -10,7 +10,11 @@ test_data_file: test.csv
 target: SalePrice
 
 pipeline_name: regression_model
-pipeline_save_file: 07c4f9a74b7842de845203fe4c18dfa8
+pipeline_save_file: regression_model_output_v
+
+mlflowrunid: 07ce71e530e34d37803cfc1be8e4f9bc
+
+
 
 # Will cause syntax errors since they begin with numbers
 variables_to_rename:

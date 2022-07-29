@@ -18,4 +18,4 @@ USER ml-api-user
 
 EXPOSE 8001
 
-CMD ["python", "house-prices-api/app/main.py"]
+CMD ["python", "/house-prices-api/app/main.py"]

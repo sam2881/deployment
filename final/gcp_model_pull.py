@@ -9,7 +9,7 @@ import os
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'secrets/mlops-353417-0d6234ccd6b9.json'
 bucket_name = "mlops_artifacts_1"
 model_type = "artifacts"
-model_filename = "0/7f75e29729e249b088d55bef81550402/artifacts/model/model.pkl"
+model_filename = "0/7f75e29729e249b088d55bef81550402/artifacts/model/7f75e29729e249b088d55bef81550402.pkl"
 mlflow_id = "7f75e29729e249b088d55bef81550402"
 
 name = f"{mlflow_id}.pkl"
