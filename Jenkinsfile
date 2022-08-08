@@ -14,10 +14,10 @@ pipeline {
         }
         stage('Building and Pushing to Registry') {
             steps {
-                 steps{
+
               sh 'exit 0'
 
-                }
+
             }
         }
      stage('Deploy to staging area') {
